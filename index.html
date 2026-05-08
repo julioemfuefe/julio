@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Digital | Kuliner Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Kedai <span>Digital</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#login" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Kedai Digital</h1>
+            <p>Lezatnya Kuliner, Praktisnya Teknologi.</p>
+            <a href="#menu" class="cta-button">Lihat Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-container">
+        <h2 class="section-title">Menu Favorit Kami</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500" alt="Salad Sehat">
+                <div class="card-body">
+                    <h3>Salad Sayur Segar</h3>
+                    <p class="price">Rp 25.000</p>
+                    <button class="order-btn" onclick="pesanWA('Salad Sayur Segar')">Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Burger">
+                <div class="card-body">
+                    <h3>Burger Digital Special</h3>
+                    <p class="price">Rp 35.000</p>
+                    <button class="order-btn" onclick="pesanWA('Burger Digital Special')">Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1544145945-f904253d0c7b?w=500" alt="Kopi">
+                <div class="card-body">
+                    <h3>Es Kopi Susu Aren</h3>
+                    <p class="price">Rp 18.000</p>
+                    <button class="order-btn" onclick="pesanWA('Es Kopi Susu Aren')">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>Tentang Kami</h2>
+            <p>Kedai Digital adalah perpaduan antara cita rasa tradisional dan kenyamanan modern. Kami hadir untuk melayani kuliner berkualitas tinggi yang bisa dipesan dengan sekali klik. Visi kami adalah membawa kemudahan digital ke meja makan Anda.</p>
+        </div>
+    </section>
+
+    <section id="login" class="login-section">
+        <div class="login-container">
+            <h2>Login Kedai Digital</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Masuk</button>
+            </form>
+            <p class="hint">Gunakan username: <b>admin</b> dan pw: <b>kedai123</b></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kedai Digital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
